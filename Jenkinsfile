@@ -10,7 +10,7 @@ pipeline {
             when {
                 anyOf {
                     changeset "*ZuulBase/**"
-                    expression { currentBuild.previousBuild?.result != "SUCCESS"}
+                    expression { currentBuild.previousBuild.result != "SUCCESS"}
                 }
             }
             steps {
