@@ -4,7 +4,8 @@ pipeline {
         maven 'M3_9_9'
     }
     stages {
-        
+    
+    
         stage('Zuul') {
             when {
                 anyOf {
